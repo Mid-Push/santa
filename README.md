@@ -1,4 +1,4 @@
-#Santa: Unpaired Image-to-Image Translation With Shortest Path Regularization ([CVPR2023](https://openaccess.thecvf.com/content/CVPR2023/papers/Xie_Unpaired_Image-to-Image_Translation_With_Shortest_Path_Regularization_CVPR_2023_paper.pdf))
+# Santa: Unpaired Image-to-Image Translation With Shortest Path Regularization ([CVPR2023](https://openaccess.thecvf.com/content/CVPR2023/papers/Xie_Unpaired_Image-to-Image_Translation_With_Shortest_Path_Regularization_CVPR_2023_paper.pdf))
 
 ### Abstract
 Unpaired image-to-image translation aims to learn
