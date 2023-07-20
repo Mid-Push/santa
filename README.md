@@ -21,23 +21,33 @@ approach.
 
 - Training:
 ```bash
-python train.py --dataroot=datasets/cityscapes --direction=BtoA --lambda_path=0.1 
+python train.py --dataroot=datasets/cityscapes --direction=BtoA --lambda_path=0.1 --tag=santa 
 ```
 - Test:
+put the trained checkpoints to the folder ```checkpoints/cityscapes```
 ```bash
 python test.py --dataroot=datasets/cityscapes --name=cityscapes --direction=BtoA
 ```
-
+- Hyper-parameters
+The default hyper-parameters should lead to good results. If you want better performance, try play with
+```--lambda_path```, ```--path_layers```, ```--path_interval_min``` and ```--path_interval_max```.     
 
 ### Pretrained Models
-- [cat2dog]()
-- [horse2zebra]()
-- [old2young]()
-- [winter2summer]()
-- [old2young]()
+- [cat2dog](https://drive.google.com/file/d/1S0K4uEs6C17uJKFXjBJ5_STGuzTvmDnk/view?usp=sharing)
+- [old2young](https://drive.google.com/file/d/18nlYAaMnqznNEWHVzjLSY_g-WZBVvAqc/view?usp=sharing)
+- [winter2summer](https://drive.google.com/file/d/121cghssDMPzmMNK7ROtejhNzFxERw8O4/view?usp=sharing)
+- [cityscapes](https://drive.google.com/file/d/1g2ygEJ4NIHqL6RnAahLtGdA92Q3IyuDa/view?usp=sharing)
 
-### Dataset
-- [old2young]()
+### Dataset 
+The dataset is constructed from the [UTKFace dataset](https://susanqq.github.io/UTKFace/). Then I apply super-resolution model and divide the output images into old/young according to the age.
+The dataset contains 1500 training and 500 testing images for each domain.
+- [old2young](https://drive.google.com/file/d/1VDKItJsUQ91TMbWEEuyRvoNBAxT8iRyC/view?usp=sharing)
+
+Following shows the first six training images in each domain.
+
+![aa](imgs/santa_sample.png)
+
+
 
 
 ## Citation

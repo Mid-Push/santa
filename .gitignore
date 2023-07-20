@@ -2,6 +2,7 @@
 debug*
 datasets/
 checkpoints/
+.idea/
 results/
 build/
 dist/
